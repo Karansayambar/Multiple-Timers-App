@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.892);
+    color: white;
+}
+input{
+    width: 50px;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+#alarmForm{
+    background-color: rgba(52, 52, 74, 1);
+    padding: 20px;
+    width: 500px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+#alarmForm1{
+    background-color: rgba(52, 52, 74, 1);
+    padding: 20px;
+    width: 500px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 30px auto;
+}
+.set{
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    background-color: yellow;
+    width: 80px;
+}
+.delete{
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    background-color: yellow;
+    width: 80px;
+}
+.stop{
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    background-color: gray;
+    width: 80px;
+}
+
+#alarms{
+    width:600px;
+    height: 400px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.current{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.348);
+    text-align: center;
+    border-radius: 25px;
+    margin: 30px;
+}
+#time{
+    font-size: 18px;
+}

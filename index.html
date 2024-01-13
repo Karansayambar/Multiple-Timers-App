@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title></title>
+<body>
+
+<h2>Set Multiple Alarms</h2>
+<form id="alarmForm">
+    <label for="">Set Time:</label>
+  <input type="number" id="alarmHour" name="alarmHour" placeholder="hh" min="0" max="23" required>
+  <p>:</p>
+  <input type="number" id="alarmMinute" name="alarmMinute" placeholder="mm" min="0" max="59" required>
+  <p>:</p>
+  <input type="number" id="alarmSecond" name="alarmSecond" placeholder="ss" min="0" max="59" required>
+
+  <button class = "set" type="button" onclick="setAlarm()">Set</button>
+</form>
+
+<div>
+    <p class="current">Current Timers</p>
+    <p class="alert">You Have no current timers yet !</p>
+</div>
+
+<div id="alarms">
+
+</div>
+<script src="./script.js"></script>
+
+</body>
+</html>
+
