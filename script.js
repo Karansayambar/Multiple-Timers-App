@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var alarms = document.getElementById("alarms");
     var formsArray = []; // Array to store all forms
 
-    document.getElementById("alarmForm").addEventListener("click", function (event) {
+    document.getElementById("alarmForm").addEventListener("click", (event) => {
         if (event.target.classList.contains("set")) {
             if (alerts) {
                 alerts.style.display = "none";
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         audio.src = 'assets/alarm-clock-short-6402.mp3';
         audio.loop = true; // Set to true if you want the alarm to loop
-        audio.volume = 1.0; // Set the initial volume
+        audio.volume = .5; // Set the initial volume
 
         time.id = "time";
         button.innerText = "Delete";
